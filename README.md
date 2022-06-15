@@ -1,4 +1,4 @@
-# [Проект "Mesto: Russia"](https://pavelolos.github.io/mesto//)
+# [Проект "Mesto: Russia"](https://pavelolos.github.io/mesto/)
 
 ## Описание:
 Сайт проекта Mesto создан в рамках обучения основам JavaScript.

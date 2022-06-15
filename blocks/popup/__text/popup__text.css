@@ -1,0 +1,9 @@
+.popup__text { 
+    border-width: 0px;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    padding-bottom: 13px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

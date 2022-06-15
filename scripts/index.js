@@ -7,11 +7,11 @@ closeButton.addEventListener('click', closePopup);
 
 function openPopup(event) {
     event.preventDefault()
-    popup.classList.add('popup__open');
+    popup.classList.add('popup__opened');
 }
 
 function closePopup(event) {
-    popup.classList.remove('popup__open');
+    popup.classList.remove('popup__opened');
 }
 
 // Находим форму в DOM
@@ -27,10 +27,6 @@ function formSubmitHandler (evt) {
                                                 // Так мы можем определить свою логику отправки.
                                                 // О том, как это делать, расскажем позже.
 
-    // Получите значение полей jobInput и nameInput из свойства value
-    let nameInput = popup.querySelector('.popup__name');
-    let jobInput = popup.querySelector('.popup__job');
-
     // Выберите элементы, куда должны быть вставлены значения полей
     let name = document.querySelector('.profile__title');
     let job = document.querySelector('.profile__subtitle');
@@ -39,7 +35,7 @@ function formSubmitHandler (evt) {
     name.textContent = nameInput.value; 
     job.textContent = jobInput.value;
 
-    popup.classList.remove('popup__open');
+    popup.classList.remove('popup__opened');
 }
 
 // Прикрепляем обработчик к форме:

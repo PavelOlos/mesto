@@ -35,7 +35,7 @@
             <img class="element__image" src="./images/kazan.jpg" alt="Дворец Земледельцев">
             <div class="element__info">
                 <h2 class="element__title">Казань</h2>
-                <button class="element__like"></button>
+                <button class="element__like" type="button"></button>
             </div>
           </li>
 
@@ -43,7 +43,7 @@
             <img class="element__image" src="./images/kaluga.jpg" alt="Селфи с коровой под Калугой">
             <div class="element__info">
                 <h2 class="element__title">Калуга</h2>
-                <button class="element__like"></button>
+                <button class="element__like" type="button"></button>
             </div>
           </li>
 
@@ -51,7 +51,7 @@
             <img class="element__image" src="./images/sochi.jpg" alt="Горы в Сочи">
             <div class="element__info">
                 <h2 class="element__title">Сочи</h2>
-                <button class="element__like"></button>
+                <button class="element__like" type="button"></button>
             </div>
           </li>
 
@@ -59,7 +59,7 @@
             <img class="element__image" src="./images/novgorod.jpg" alt="Храм в Нижнем Новгороде">
             <div class="element__info">
                 <h2 class="element__title">Новгород</h2>
-                <button class="element__like"></button>
+                <button class="element__like" type="button"></button>
             </div>
           </li>
 
@@ -67,7 +67,7 @@
             <img class="element__image" src="./images/omsk.jpg" alt="Поля под Омском">
             <div class="element__info">
                 <h2 class="element__title">Омск</h2>
-                <button class="element__like"></button>
+                <button class="element__like" type="button"></button>
             </div>
           </li>
 
@@ -75,7 +75,7 @@
             <img class="element__image" src="./images/piter.jpg" alt="Дворец Земледельцев">
             <div class="element__info">
                 <h2 class="element__title">Питер</h2>
-                <button class="element__like"></button>
+                <button class="element__like" type="button"></button>
             </div>
           </li>
         </ul>
@@ -91,27 +91,27 @@
 </footer>
 
   <div class="popup">
-    <form class="popup__profile-edit">
-        <button class="popup__close-button" type="button"></button>
+    <div class="popup__container">
+    <button class="popup__close-button" type="button"></button>
+    <form class="popup__profile-edit" name="profile">
           <p class="popup__title">Редактировать профиль</p>
           <input 
           type="text" 
+          name="nameProfile"
           placeholder="Имя" 
           value="Павел Олос" 
           class="popup__text popup__name"
-          minlength="2"
-          maxlength="30"
           required>
           <input 
           type="text" 
+          name="jobProfile"
           placeholder="Профессия" 
           value="Исследователь по жизни" 
           class="popup__text popup__job popup__text-subtitle"
-          minlength="2"
-          maxlength="200"
           required>
         <button class="popup__save-button" type="submit">Сохранить</button>
     </form>
+   </div>
 </div>
 <script src="./scripts/index.js"></script>
 </body>

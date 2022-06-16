@@ -7,11 +7,11 @@ closeButton.addEventListener('click', closePopup);
 
 function openPopup(event) {
     event.preventDefault()
-    popup.classList.add('popup__opened');
+    popup.classList.add('popup_opened');
 }
 
 function closePopup(event) {
-    popup.classList.remove('popup__opened');
+    popup.classList.remove('popup_opened');
 }
 
 // Находим форму в DOM
@@ -35,7 +35,7 @@ function formSubmitHandler (evt) {
     name.textContent = nameInput.value; 
     job.textContent = jobInput.value;
 
-    popup.classList.remove('popup__opened');
+    popup.classList.remove('popup_opened');
 }
 
 // Прикрепляем обработчик к форме:
